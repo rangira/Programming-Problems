@@ -3,7 +3,25 @@ import java.util.List;
 
 
 
-/*The number of subsets of a set with n elements is 2n. If we have, for example, the string "abc", we will have 2n = 23 = 8 subsets.
+/*
+We must show that
+(n0)+(n1)+(n2)+⋯+(nn)=2n
+(n0)+(n1)+(n2)+⋯+(nn)=2n
+is the number of subsets of an nn-element set SS where n≥0n≥0.
+
+Every subset of SS is a kk-subset of SS where k=0,1,2,...,nk=0,1,2,...,n. We know that (nk)(nk) equals the number of kk-subsets of S. Thus by the Addition Principle
+(n0)+(n1)+(n2)+⋯+(nn)
+(n0)+(n1)+(n2)+⋯+(nn)
+equals the number of subsets to the set SS. We can count the same thing by observing that each element of the set SS has two choices, either they are in a subset or they are not in a subset. Let S={x1,x2,x3,...,xn}S={x1,x2,x3,...,xn}. So, x1x1 is either in a subset or it is not in a subset, x2x2 is either in a subset or it is not in a subset,..., xnxn is either in a subset or it is not in a subset. Thus by the Multiplication Principle there are 2n2n ways we can form a subset of the set SS. Hence (n0)+(n1)+(n2)+⋯+(nn)=2n(n0)+(n1)+(n2)+⋯+(nn)=2n.
+
+Another approach is to consider the Binomial Theorem
+(x+y)n=∑k=0n(nk)xn−kyk.
+(x+y)n=∑k=0n(nk)xn−kyk.
+Letting x=1x=1 and y=1y=1 we obtain
+2n=∑k=0n(nk).
+
+
+The number of subsets of a set with n elements is 2n. If we have, for example, the string "abc", we will have 2n = 23 = 8 subsets.
 
 The number of states that can be represented by n bits is also 2n. We can show there is a correspondence between enumerating all possible states for n bits and all possible subsets for a set with n elements:
 
