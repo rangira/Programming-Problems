@@ -154,3 +154,19 @@ import java.util.Random;
       return a;
    }
 }
+
+
+/* OUTPUT
+
+Success	time: 1.04 memory: 320832 signal:0
+First, verify this actually sorts arrays...
+Before: [94, 14, 83, 80, 72, 92, 3, 31, 85, 90, 72, 18, 96, 95, 1, 61, 9]
+After: [1, 3, 9, 14, 18, 31, 61, 72, 72, 80, 83, 85, 90, 92, 94, 95, 96]
+Verified = true
+
+Now, compare times on array of size 1000000:
+iterativeMergesort: 261milliseconds
+iterativeMergesortWithoutCopy: 221milliseconds
+recursiveMergesort: 268milliseconds
+Arrays.sort:        134milliseconds
+*/
