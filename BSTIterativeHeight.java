@@ -77,3 +77,10 @@ class BinaryTree
         System.out.println("Height of tree is " + tree.treeHeight(tree.root));
     }
 }
+
+
+/* OUTPUT
+
+Height of tree is 3
+
+*/
