@@ -356,3 +356,20 @@ public class LinkedList<AnyType> implements Iterable<AnyType>
       System.out.println(list);
 	}
 }
+
+
+
+/* OUTPUT
+
+Success	time: 0.1 memory: 320576 signal:0
+h e a p 
+h e a p 
+h
+h e a p s 
+h e a p s 
+h e ee a p s 
+s
+yy h e ee a p s 
+yy h e ee a s 
+
+*/
