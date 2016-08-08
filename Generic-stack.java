@@ -145,3 +145,20 @@ class FullStackException extends RuntimeException {
     }
   }
 }
+
+
+/*OUTPUT
+Pushing elements onto doubleStack
+1.1 2.2 3.3 4.4 5.5 6.6 
+Popping elements from doubleStack
+5.5 4.4 3.3 2.2 1.1 
+Pushing elements onto integerStack
+1 2 3 4 5 6 7 8 9 10 11 
+Popping elements from integerStack
+10 9 8 7 6 5 4 3 2 1 
+Pushing elements onto stringStack
+rudra rud cs course 
+Popping elements from stringStack
+course cs rud rudra 
+
+*/
