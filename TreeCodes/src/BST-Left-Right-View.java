@@ -114,3 +114,15 @@ class Node {
   this.right = null;
  }
 }
+
+/* OUTPUT 
+
+Success	time: 0.1 memory: 320576 signal:0
+printing inorder: 
+8 9 10 12 13 14 
+Printing left View: 
+10 8 9 13 
+Printing right view: 
+10 14 12 13 
+
+*/
