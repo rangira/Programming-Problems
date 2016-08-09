@@ -24,3 +24,5 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 19) LRU cache
 20) TwoPersonSumzero
 21)Rotation array (search strings)
+22)BST from sorted array
+23) Linked List swap nodes
