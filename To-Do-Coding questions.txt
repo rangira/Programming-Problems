@@ -32,3 +32,5 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 27) chocolates question zappos
 28) bloom circle murderer question
 29) min cost path from one corner to another
+30) convert a given number into roman number
+31) given number of swaps, find the largest number that can be formed
