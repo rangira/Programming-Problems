@@ -35,3 +35,6 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 30) convert a given number into roman number
 31) given number of swaps, find the largest number that can be formed
 32) Edit Distance
+33) sudoku valid
+34) tic tac toe
+35) othello
