@@ -20,3 +20,5 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 15) rat in a maze
 16) Course schedule Leetcode question
 17) rain trap in 2d-matrix
+18) blocking queue (thread safe)
+19) LRU cache
