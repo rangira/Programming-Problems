@@ -17,7 +17,7 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 12) array rotation search string there
 13) Pascal triangle leetcode question
 14) Vaccination problem
-15) rat in a maze
+15) rat in a maze (dp and recursive)
 16) Course schedule Leetcode question
 17) rain trap in 2d-matrix
 18) blocking queue (thread safe)
