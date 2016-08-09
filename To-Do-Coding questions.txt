@@ -1,0 +1,22 @@
+1) folder logistic regression assignment mtcars vidyaanalytics
+http://brazenly.blogspot.com/2014/04/r-simple-logistic-regression-logit.html
+https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
+1) Quicksort (Generic)
+2)Heapsort (Generic)
+3)Insertion Sort (Generic)
+4)Selection Sort (Generic)
+5) Priority Queue Java min and max (Generic) extract max and min
+6) trees traversals (iterative and recursive) in, post, pre, zig-zag
+7) string reversal/iterative recursive
+8) find if string are anagrams panagrams
+7) longest repeated substring
+8) find all subsets 
+9) find all permuattaions of a string (arrange lexicographically)
+10) maximum sum subarray and  maximum product subarray
+11) all islands of 1 in a matrix
+12) array rotation search string there
+13) Pascal triangle leetcode question
+14) Vaccination problem
+15) rat in a maze
+16) Course schedule Leetcode question
+17) rain trap in 2d-matrix
