@@ -28,3 +28,5 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 23) Linked List swap nodes
 24) expression evaluation
 25) longest plaindromic strings
+26) Telephone directory
+27) chocolates question zappos
