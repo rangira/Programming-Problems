@@ -6,7 +6,7 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 3)Insertion Sort (Generic)
 4)Selection Sort (Generic)
 5) Priority Queue Java min and max (Generic) extract max and min
-6) trees traversals (iterative and recursive) in, post, pre, zig-zag
+6) trees traversals (iterative and recursive) in, post, pre, zig-zag, mirror,swap,pathsum,diameter,height,lca
 7) string reversal/iterative recursive
 8) find if string are anagrams panagrams
 7) longest repeated substring
@@ -22,3 +22,5 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 17) rain trap in 2d-matrix
 18) blocking queue (thread safe)
 19) LRU cache
+20) TwoPersonSumzero
+21)Rotation array (search strings)
