@@ -7,6 +7,9 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 4)Selection Sort (Generic)
 5) Priority Queue Java min and max (Generic) extract max and min
 6) trees traversals (iterative and recursive) in, post, pre, zig-zag, mirror,swap,pathsum,diameter,height,lca
+36) change the pointers of neighbours of the nodes  in bst
+37) serialization and desrialization of bst/n-ary tree
+38) BFS/DFS (iterative recursive)
 7) string reversal/iterative recursive
 8) find if string are anagrams panagrams
 7) longest repeated substring
