@@ -54,6 +54,7 @@ Strings
 * number to word program (like 123 to one hundred three)
 * camel case program
 * comment removal
+* all combinations of ip-addresses
 
 
 Arrays
