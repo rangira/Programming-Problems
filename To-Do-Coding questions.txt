@@ -10,6 +10,7 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 36) change the pointers of neighbours of the nodes  in bst
 37) serialization and desrialization of bst/n-ary tree
 38) BFS/DFS (iterative recursive)
+39) AVL rotation (self balancing)
 7) string reversal/iterative recursive
 8) find if string are anagrams panagrams
 7) longest repeated substring
