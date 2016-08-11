@@ -43,3 +43,12 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 33) sudoku valid
 34) tic tac toe
 35) othello
+
+======================================================================================================================================
+Strings
+-------
+* given pattern of D and I print minimum number that satisfies that pattern (gfg)
+* zig zag concatenation of strings (gfg)
+* overlapping strings (gfg)
+* digits to roman numbers
+* number to word program (like 123 to one hundred three)
