@@ -55,6 +55,7 @@ Strings
 * camel case program
 * comment removal
 * all combinations of ip-addresses
+* regular expressions and strings
 
 
 Arrays
@@ -64,3 +65,8 @@ Arrays
 Patterns
 --------
 * 
+oop
+---
+* allergy class ( recent patients who visited)
+* medication class 
+* class for chess
