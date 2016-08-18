@@ -84,3 +84,13 @@ oop
 Java Codes
 ----------
 * http://www.programcreek.com/java-api-examples/index.php?source_dir=Algorithms-and-Data-Structures-in-Java-master/src/me/ramswaroop/threads/Basics.java
+
+
+
+==========================================================================================================================
+
+Iterative Solutions to some common recursive approaches
+--------------------------------------------------------
+
+* https://crypticarticles.wordpress.com/2015/07/17/friend-circles-hacker-earth-bankbazaar-online-coding-test/
+* https://discuss.leetcode.com/topic/16355/my-java-solution-iterative-dfs-stack
