@@ -95,3 +95,9 @@ Iterative Solutions to some common recursive approaches
 * https://crypticarticles.wordpress.com/2015/07/17/friend-circles-hacker-earth-bankbazaar-online-coding-test/ (friend circles)
 * https://discuss.leetcode.com/topic/16355/my-java-solution-iterative-dfs-stack (number of islands)
 * http://www.bowdoin.edu/~ltoma/teaching/cs210/fall09/Examples/Maze.java ( rat in the maze)
+
+==========================================================================================================================
+Useful Link
+----------
+
+* Algorithms concepts implementations (http://www.akira.ruc.dk/~keld/teaching/ECII_f15/Slides/)
