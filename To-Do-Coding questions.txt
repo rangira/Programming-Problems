@@ -43,6 +43,14 @@ https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/
 33) sudoku valid
 34) tic tac toe
 35) othello
+36) alien dictionary
+38) retunr true or false based on dice roll equal probability.
+39) Compare all the leaf nodes from left to right in two trees'
+40) walrus weights (given a list of numbers find the closest sum to 1000)
+41) Game of 2/9 [http://stackoverflow.com/questions/13364811/game-of-2-9-interview-at-facebook]
+42) Number game with prime numbers and multiples.
+43) knapsack recusrive non recusrive.
+
 
 ======================================================================================================================================
 Strings
