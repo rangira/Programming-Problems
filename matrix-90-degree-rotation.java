@@ -1,6 +1,4 @@
-package pingpong;
-
-public class rotateMat
+class rotateMat
 {
 	public static void main(String args[])
 	{
@@ -23,7 +21,7 @@ public class rotateMat
 		for (int i=0; i<n; i++)
 			for (int j=0;j<m; j++)
 				//output [j][n-1-i] = input[i][j];//anticlockwise
-				output [n-j-1][i] = input[i][j];//clockwise
+				output [m-j-1][i] = input[i][j];//clockwise
 		return output;
 		}
 	
