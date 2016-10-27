@@ -1,92 +1,144 @@
-public class InfixToPostfix
+/*
+  Infix to postfix conversion in C++ 
+  Input Postfix expression must be in a desired format. 
+  Operands and operator, both must be single character.
+  Only '+'  ,  '-'  , '*', '/' and '$' (for exponentiation)  operators are expected. 
+*/
+#include<iostream>
+#include<stack>
+#include<string>
+
+using namespace std;
+
+// Function to convert Infix expression to postfix 
+string InfixToPostfix(string expression);
+
+// Function to verify whether an operator has higher precedence over other
+int HasHigherPrecedence(char operator1, char operator2);
+
+// Function to verify whether a character is operator symbol or not. 
+bool IsOperator(char C);
+
+// Function to verify whether a character is alphanumeric chanaracter (letter or numeric digit) or not. 
+bool IsOperand(char C);
+
+int main() 
 {
-    private static boolean isOperator(char c)
-    {
-        return c == '+' || c == '-' || c == '*' || c == '/' || c == '^'
-                || c == '(' || c == ')';
-    }
+	string expression; 
+	cout<<"Enter Infix Expression \n";
+	getline(cin,expression);
+	string postfix = InfixToPostfix(expression);
+	cout<<"Output = "<<postfix<<"\n";
+}
 
-    private static boolean isLowerPrecedence(char op1, char op2)
-    {
-        switch (op1)
-        {
-            case '+':
-            case '-':
-                return !(op2 == '+' || op2 == '-');
+// Function to evaluate Postfix expression and return output
+string InfixToPostfix(string expression)
+{
+	// Declaring a Stack from Standard template library in C++. 
+	stack<char> S;
+	string postfix = ""; // Initialize postfix as empty string.
+	for(int i = 0;i< expression.length();i++) {
 
-            case '*':
-            case '/':
-                return op2 == '^' || op2 == '(';
+		// Scanning each character from left. 
+		// If character is a delimitter, move on. 
+		if(expression[i] == ' ' || expression[i] == ',') continue; 
 
-            case '^':
-                return op2 == '(';
+		// If character is operator, pop two elements from stack, perform operation and push the result back. 
+		else if(IsOperator(expression[i])) 
+		{
+			while(!S.empty() && S.top() != '(' && HasHigherPrecedence(S.top(),expression[i]))
+			{
+				postfix+= S.top();
+				S.pop();
+			}
+			S.push(expression[i]);
+		}
+		// Else if character is an operand
+		else if(IsOperand(expression[i]))
+		{
+			postfix +=expression[i];
+		}
 
-            case '(':
-                return true;
+		else if (expression[i] == '(') 
+		{
+			S.push(expression[i]);
+		}
 
-            default:
-                return false;
-        }
-    }
+		else if(expression[i] == ')') 
+		{
+			while(!S.empty() && S.top() !=  '(') {
+				postfix += S.top();
+				S.pop();
+			}
+			S.pop();
+		}
+	}
 
-    public static String convertToPostfix(String infix)
-    {
-        Stack<Character> stack = new Stack<Character>();
-        StringBuffer postfix = new StringBuffer(infix.length());
-        char c;
+	while(!S.empty()) {
+		postfix += S.top();
+		S.pop();
+	}
 
-        for (int i = 0; i < infix.length(); i++)
-        {
-            c = infix.charAt(i);
+	return postfix;
+}
 
-            if (!isOperator(c))
-            {
-                postfix.append(c);
-            }
+// Function to verify whether a character is english letter or numeric digit. 
+// We are assuming in this solution that operand will be a single character
+bool IsOperand(char C) 
+{
+	if(C >= '0' && C <= '9') return true;
+	if(C >= 'a' && C <= 'z') return true;
+	if(C >= 'A' && C <= 'Z') return true;
+	return false;
+}
 
-            else
-            {
-                if (c == ')')
-                {
+// Function to verify whether a character is operator symbol or not. 
+bool IsOperator(char C)
+{
+	if(C == '+' || C == '-' || C == '*' || C == '/' || C== '$')
+		return true;
 
-                    while (!stack.isEmpty() && stack.peek() != '(')
-                    {
-                        postfix.append(stack.pop());
-                    }
-                    if (!stack.isEmpty())
-                    {
-                        stack.pop();
-                    }
-                }
+	return false;
+}
 
-                else
-                {
-                    if (!stack.isEmpty() && !isLowerPrecedence(c, stack.peek()))
-                    {
-                        stack.push(c);
-                    }
-                    else
-                    {
-                        while (!stack.isEmpty() && isLowerPrecedence(c, stack.peek()))
-                        {
-                            Character pop = stack.pop();
-                            if (pop != '(')
-                            {
-                                postfix.append(pop);
-                            }
-                        }
-                    }
+// Function to verify whether an operator is right associative or not. 
+int IsRightAssociative(char op)
+{
+	if(op == '$') return true;
+	return false;
+}
 
-                    stack.push(c);
-                }
-            }
-        }
+// Function to get weight of an operator. An operator with higher weight will have higher precedence. 
+int GetOperatorWeight(char op)
+{
+	int weight = -1; 
+	switch(op)
+	{
+	case '+':
+	case '-':
+		weight = 1;
+	case '*':
+	case '/':
+		weight = 2;
+	case '$':
+		weight = 3;
+	}
+	return weight;
+}
 
-        return postfix.toString();
-    }
+// Function to perform an operation and return output. 
+int HasHigherPrecedence(char op1, char op2)
+{
+	int op1Weight = GetOperatorWeight(op1);
+	int op2Weight = GetOperatorWeight(op2);
 
-    public static void main(String[] args)
-    {
-        System.out.println(convertToPostfix("A*B-(C+D)+E"));
-    }
+	// If operators have equal precedence, return true if they are left associative. 
+	// return false, if right associative. 
+	// if operator is left-associative, left one should be given priority. 
+	if(op1Weight == op2Weight)
+	{
+		if(IsRightAssociative(op1)) return false;
+		else return true;
+	}
+	return op1Weight > op2Weight ?  true: false;
 }
