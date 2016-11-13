@@ -109,3 +109,13 @@ Useful Link
 ----------
 
 * Algorithms concepts implementations (http://www.akira.ruc.dk/~keld/teaching/ECII_f15/Slides/)
+
+==========================================================================================================================
+
+* Good nodes coding question careercup
+* https://www.careercup.com/question?id=17433662
+* http://stackoverflow.com/questions/363681/generating-random-integers-in-a-specific-range
+* house robber (recursive implemented eclipse lnux neon)
+* swap numbers (mailed codes umail swap adjacent)
+* reverse simplify question (http://stackoverflow.com/questions/40102595/remove-the-parentheses-around-the-very-first-element-in-an-expression-tree-and-i)
+* http://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
