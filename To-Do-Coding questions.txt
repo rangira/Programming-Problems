@@ -119,3 +119,11 @@ Useful Link
 * swap numbers (mailed codes umail swap adjacent)
 * reverse simplify question (http://stackoverflow.com/questions/40102595/remove-the-parentheses-around-the-very-first-element-in-an-expression-tree-and-i)
 * http://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+
+==========================================================================================================================
+Number theory/probbality
+------------------------
+
+* https://www.careercup.com/question?id=17433662
+
+Design and implement a class to generate random numbers in an arbitrary probability distribution given by an array of integer weights, i.e. for int[] w return a number, n, from 0 to w.length - 1 with probability w[n] / sum(w). Using an existing random number generator with a uniform distribution is permitted. 
