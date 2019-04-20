@@ -1,0 +1,31 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		String str = "My name is Rudranibrhjt fhb rhhjr rhtgjr";
+		//swap "name" with "Rudrani"
+		String w1 = "name";
+		String w2 ="Rudrani";
+		
+		int idx1 = str.indexOf(w1);
+		int l1 = w1.length();
+		int idx2 = str.indexOf(w2);
+		int l2 = w2.length();
+		String pre = str.substring(0,idx1);
+		String mid = str.substring(idx1+l1, idx2);
+		String pst = str.substring(idx2+l2);
+		
+		//Now swapping 
+		String fnl = pre + w2 + mid + w1 +pst;
+		System.out.println(fnl);
+		
+	}
+}
