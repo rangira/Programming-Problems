@@ -1,5 +1,5 @@
 ## Searching
-
+> binary search
 
 ## Sorting
 
