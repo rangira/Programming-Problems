@@ -2,7 +2,11 @@
 > binary search
 
 ## Sorting
-
+> heap sort
+> quick sort
+> bucket sort
+> counting sort
+> Fastest sorting algorithm
 
 ## Arrays
 
