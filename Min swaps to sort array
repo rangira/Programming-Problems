@@ -1,0 +1,70 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		//int [] ar = {1, 5, 4, 3, 2}; // 2
+		//int[]ar = {2,1}; //1
+		//int[]ar = {3,2,1}; //1
+		int[]ar = {4,3,2,1}; //2
+		System.out.println(helper(ar, 0));
+	}
+	
+	public static int helper(int [] ar, int ind){
+		if (sorted(ar)) {
+			return 0;
+		}
+		
+		if (ind == ar.length-1)
+		 return 10000;
+		int min = Integer.MAX_VALUE;
+		for(int i=ind;i< ar.length;i++) {
+			for(int j=ind+1;j<ar.length;j++) {
+				int[]ar2 = swap(ar, i, j);
+				//System.out.println("ar2 = "+Arrays.toString(ar2));
+				//System.out.println("ar = "+Arrays.toString(ar));
+				//System.out.println(Arrays.toString(ar2));
+				int cnt = 1+helper(ar2, ind+1);
+				//System.out.println("cnt = "+cnt+"min = "+min);
+				if (cnt < min) {
+				 min = cnt;
+				 //System.out.println(min);
+				}
+			}
+		}
+		return min;
+	}
+	
+	public static int[] copyAr(int[]ar) {
+		int[]ar2 = new int[ar.length];
+		for (int i = 0; i < ar.length; ++i) {
+			ar2[i] = ar[i];
+		}
+		return ar2;
+	}
+	
+	public static boolean sorted(int[]ar) {
+		for (int i = 0; i < ar.length - 1; i++) {
+        if (ar[i] > ar[i + 1])
+            return false;
+        }
+        return true;
+	}
+	
+	public static int[] swap(int[] ar, int i, int j){
+		int[]ar2 = copyAr(ar);
+		int temp = ar[i];
+		ar2[i] = ar2[j];
+		ar2[j] = temp;
+		return ar2;
+	}
+}
